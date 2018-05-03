@@ -1,0 +1,344 @@
+/*版心公共类*/
+body{
+	background-color: #f6f6f6;
+}
+blockquote,body,dd,dir,dl,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,input,legend,menu,ol,optgroup,p,pre,tbody,td,textarea,tfoot,th,thead,ul{
+	margin: 0;
+	padding: 0;
+}
+input,button{
+	border: 0;
+	outline: 0;   /*取消轮廓边框*/
+}
+img{
+	/*display: block;*/
+	vertical-align: top;    /*j解决图片地底侧有空白问题*/
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+	color: #999;
+}
+a:hover{
+	color:#e33333;
+}
+.w{
+	width:1190px;
+	margin:0 auto;
+}
+.f10{
+	color:#f10215!important;   /*权重最高*/
+}
+/*声明字体*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?a3cnid');
+  src:  url('../fonts/icomoon.eot?a3cnid#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?a3cnid') format('truetype'),
+    url('../fonts/icomoon.woff?a3cnid') format('woff'),
+    url('../fonts/icomoon.svg?a3cnid#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*浮动公共类*/
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+/*header部分*/
+header{
+	height: 80px;
+	background-color: #000000;
+}
+/*快速导航栏 */
+.shortcut{
+	height:30px;
+	background-color: #e3e4e5;
+	border-bottom:1px solid #ddd;
+	font-size: 12px;
+	line-height: 30px;
+	color: #999999;
+}
+.city{
+	margin-left: 200px;
+}
+.shortcut  li{
+	float: left;
+
+}
+.shortcut i{           /*i标签的CSS样式值*/
+	font-family: "icomoon";
+	font-style: normal;  /*让倾斜字体不倾斜*/
+	color:#ccc;
+}
+.space{
+	/*小竖线的做法*/
+	height: 10px;
+	width: 1px;
+	background-color: #ccc;
+	margin: 10px 12px;
+}
+.mobile{
+	position: relative;
+}
+.mobile img{
+	position: absolute;
+	left: -3px;
+    	top: 32px;
+	border: 1px solid #ccc;
+	padding: 3px 1px 3px 3px;
+}
+/*快速导航栏 over*/
+/*中间部分 start*/
+.middle{
+	height: 140px; 
+	position: relative;
+}
+	/*logo*/
+.logo{
+	position: absolute;
+	top:-30px;
+	left: 0;
+	box-shadow: 0px -10px 10px rgba(0,0,0,.3)
+}
+.logo a{
+	display: block;
+	width: 170px;
+	height: 180px;
+	background: url(../images/jd_logo.png) no-repeat;
+}
+	/*搜索栏部分*/
+.form{
+	width: 550px;
+	height: 35px;
+	position: absolute;
+	top:25px;
+	left: 320px;
+}
+.form input{
+	width: 495px;
+	height: 33px;
+	border: 1px solid #f10215;
+	float: left;	/*实现左浮动*/
+	font-size: 14px;
+	padding-left: 3px;
+	/*box-sizing:border-box;*/
+
+}
+.form button{
+	width: 50px;
+	height: 35px;
+	background-color: #f10215;
+	float: left;	/*实现左浮动*/
+}
+.form button i{       /*声明i字体*/
+	font-family: "icomoon";
+	font-style: normal;
+	color: #fff;
+}
+	/*购物车部分*/
+.shopCar{
+	width: 188px;
+	height: 33px;
+	border: 1px solid #ccc;
+	position: absolute;
+	top:25px;
+	right: 95px;
+	background-color: #fff;
+	line-height: 33px;
+	text-align: center;
+	color: #f10215; 
+}
+.shopCar i{
+	font-family: "icomoon";
+	font-style: normal;
+	margin-right: 5px;
+}
+		
+.shopCar span{
+	width: 15px;
+	height: 15px;
+	background-color: #f10215;
+	border-radius: 50%;
+	position: absolute;
+	top:5px;
+	right: 30px;
+	font-size: 12px;
+	line-height: 15px;
+	color: #fff;
+}
+	/*关键词*/
+.hotword {
+	position: absolute;
+	left: 320px;
+	top:70px;
+}
+.hotword a{
+	float: left;
+	margin-right: 10px;
+}
+	/*小导航部分*/
+.navitems{
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 230px;
+}
+.navitems li{
+	float: left;
+	margin-left: 30px;
+}
+.navitems li a{
+	color: #555;
+	font-size: 16px;
+	font-weight: 700;
+}
+.navitems li a:hover{
+	color: #f10215;
+}
+.navitems .space{
+	margin-top: 16px;
+	margin-left: 15px;
+	margin-right: -15px;
+	/*上面三简写模式*/
+	/*margin: 16px 15px 0 -15px;*/
+}
+.super{
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+}
+/*中间部分 over*/
+
+/*页面底部分 start*/
+footer{
+	margin-top: 35px;
+	height: 500px;
+	background-color: #eaeaea;
+}
+.footer a{
+	color: #666;
+}
+/*services部分*/
+.services{
+	padding: 30px 0;
+	border-bottom: 1px solid #dedede;
+	overflow: hidden;   /*清除浮动的方式之一*/
+}
+.services ul li{
+	width: 297px;
+	height: 43px;
+	line-height: 43px;
+	position: relative;
+	float: left;
+}
+.services li h5{
+	position: absolute;
+	top:0;
+	left: 38px;
+	width: 37px;
+	height: 43px;
+	background: url(../images/sprite.png) no-repeat;
+}
+.services li:nth-child(2) h5{
+	background: url(../images/sprite.png) 0 -45px no-repeat;
+}
+.services li:nth-child(3) h5{
+	background: url(../images/sprite.png) 0 -89px no-repeat;
+}
+.services li:nth-child(4) h5{
+	background: url(../images/sprite.png) 0 -134px no-repeat;
+}
+.services li p{
+	font-weight: 700;
+	margin-left: 82px;
+}
+/*help部分*/
+.help{
+	height: 200px;
+	border-bottom: 1px solid #dedede;
+	padding-top: 25px;
+	box-sizing:border-box;
+}
+.help dl{
+	width: 192px;
+	float: left;
+}
+.help dt,
+.coverage h5{
+	height: 30px;
+	font-size: 14px;
+	color: #666;
+}
+.help dd{
+	height: 22px;
+}
+
+.help .coverage{
+	width: 200px;
+	height: 150px;
+	background:url(../images/ico_footer.png) no-repeat;
+}
+.help .coverage h5{
+	padding-left: 35px;
+}
+.help .coverage p{
+	font-size: 12px;
+	line-height: 18px;
+	color: #666;
+	width: 180px;
+}
+.help .coverage a{
+	display: block;			/*a是内联元素  需要使用display:block*/
+	margin-top: 5px;
+	width: 180px;				/*制定宽度才能实现a的右对齐*/
+	text-align: right;
+}
+/*版权部分*/
+.copyright{
+	padding-top: 20px;
+	text-align: center;             /*下面的.footer-icon a使用的display: inline-block;是因为这一句才能居中对齐*/
+	color: #666;
+	font-size: 12px;
+}
+.copyright span{
+	margin: 0 10px;
+}
+
+.mod_copyright_info{
+	padding: 20px 0;
+}
+.mod_copyright_info p{
+	    line-height: 22px;
+   	   color: #999;
+}
+.footer-icon a{
+	display: inline-block;			/*行内块元素可以使用text-align:center来实现居中对齐*/
+	width: 103px;
+	height: 33px;
+	background:url(../images/ico_footer.png) no-repeat 0 -150px;
+	margin: -11px 4px 0;
+
+}
+.footer-icon a:nth-child(2){
+	background:url(../images/ico_footer.png) no-repeat -103px -150px; /*都可以实现*/
+}
+.footer-icon a:nth-child(3){
+	background-position: 0 -183px;     /*都可以实现*/
+} 
+.footer-icon a:nth-child(4){
+	background-position: -103px -183px;   
+} 
+.footer-icon a:nth-child(5){
+	background-position: 0 -216px;     
+} 
+.footer-icon a:nth-child(6){
+	background-position: -103px -216px;    
+} 
+/*页面底部分 over*/

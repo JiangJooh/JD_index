@@ -1,0 +1,329 @@
+/*中间分类模块*/
+.grid{
+	height: 480px;
+}
+/*第一版 购物信息*/
+.grid-col1{
+	width: 190px;
+	height: 100%;
+	background-color: #6e6568;
+	color: #fff;
+	font-size: 14px;          /*   给反斜杠 /写的*/
+	position: relative;
+}
+.ad{
+	width: 250px;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left: -250px;
+}
+.ad-r{
+	position: absolute;
+	top: 0;
+	left: 250px;
+	z-index: 999;
+	background: url("../images/ad-r.jpg");    /*使用图片作为背景实现动画效果
+
+	/*一开始时候*/
+	width: 0;
+	height: 480px;                   /*img的动画效果*/
+	/*这个图片动画添加过度*/
+	transition: all 0.8s;
+}
+.ad:hover .ad-r{
+	width: 790px;
+	height: 480px;
+}
+.grid-col1 a{
+	color: #fff;
+	font-size: 14px;   
+	margin:0 3px;
+}
+.grid-col1 a:hover{
+	color:#f10215;
+}
+.grid-col1 ul{
+	padding: 10px  0;
+}
+ .grid-col1 ul li{
+ 	padding-left: 12px;
+ 	height: 29px;
+ 	line-height: 26px
+ }
+  .grid-col1 ul li:hover{
+	background-color: #9c9698;
+  }
+  /*第二版 图片广告*/
+.grid-col2{
+	width: 790px;
+	height: 100%;
+	margin-left: 10px;
+}
+.grid-col2 .grid-col2-l{
+	width: 590px;
+	height: 100%;
+	float: left;
+}
+.grid-col2 .grid-col2-r{
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+.grid-col2 .grid-col2-r div{
+	margin-bottom: 15px;
+	margin-left: 10px;
+}  
+/*箭头部分*/
+.grid-col2-l{
+	position: relative;
+}
+
+.arrow-l,
+.arrow-r{
+	position: absolute;
+	top:50%;
+	transform:translateY(-50%); 
+	width: 24px;
+	height: 40px;
+	background: rgba(0,0,0,0.2);
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	color: rgba(255,255,255,0.6);
+	font-family: arial;
+	font-weight: normal;
+}
+.arrow-r{
+	right: 0; 
+}
+.circle{
+	width: 158px;
+	height: 18px;
+	background:  rgba(255,255,255,0.2);
+	position: absolute;
+	bottom:8px;
+	left: 20px;
+	border-radius: 10px;
+	padding-left: 8px;
+	box-sizing: border-box;
+}
+.circle li{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	margin: 3px  3px  0;
+	cursor: pointer;   /*鼠标经过li的时候变成小手*/
+}
+.circle .current{
+	background-color: #f10215;
+}
+
+/*右边模块*/
+.grid-col3{
+	width: 190px;
+	height: 100%;
+}
+.login{
+	height: 115px;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	padding:15px;
+	box-sizing:border-box;
+}
+.login-t {
+	width: 95px;
+	height: 60px;
+	line-height: 20px;  
+	font-size: 12px;
+	white-space: nowrap;   /*强制文字不能还行*/
+	overflow: hidden;  /*超出则隐藏*/
+	text-overflow:ellipsis;    /*超出部分用省略号*/
+	color:#666 ;
+	padding-left: 60px;  /*将文字向右边移动*/
+	position: relative;
+}
+.login-t  a{
+	color: #666;
+}
+.login-t  a:hover{
+	color: #f10215;
+}
+.user-info{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	top:0;
+}
+.user-info img{
+	width: 100%;
+	border-radius: 50%;
+}
+.login-b a{
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	line-height: 20px;
+	border: 2px solid #f10215;
+	margin-right: 3px;
+	text-align: center;
+	color: #f10215;
+	float: left;
+}
+.login-b a:hover{
+	background-color: #f10215;
+	color: #fff;
+}
+.news{
+	height: 154px;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	padding: 7px 13px 0;
+	box-sizing:border-box;
+}
+.new-t{
+	height: 19px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.new-t a{
+	float: left;
+	height: 17px;
+	line-height: 17px;
+}
+.cuxiao{
+	width: 38px;
+	border-right: 1px solid #ccc;
+}
+.gongao{
+	margin-left: 15px;
+}
+.new-t .more{
+	float: right;
+}
+.new-t div{
+	height: 2px;
+	width: 28px;
+	background-color: #f10215;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+.new-b{
+	padding-top:15px;
+	white-space: nowrap;   /*强制文字不能还行*/
+	overflow: hidden;  /*超出则隐藏*/
+	text-overflow:ellipsis;    /*超出部分用省略号*/
+
+}
+.new-b li{
+	height: 23px;
+	line-height: 23px;
+}
+.expand{
+	height: 209px;
+	background-color: #fff;
+	overflow: hidden;	/*expand 这个宽度继承了父亲190px 的宽度*/
+}
+.expand ul{ 
+	width: 195px;		/*父190px  但是li超越190  故让ul变大*/
+}
+.expand li{
+	width: 47px;
+	height: 69px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;
+}
+.expand li a{
+	display: block;
+	padding-top:15px;
+	text-align: center;
+}
+.expand li i {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background:url(../images/expand-sprite.png) no-repeat;
+}
+.expand li:first-child i{
+	width: 20px;
+	height: 24px; 
+	background-position: 0 0;
+}
+.expand li:nth-child(2) i{
+	width: 20px;
+	height: 24px; 
+	background-position: -26px 0;
+}
+
+.expand li:nth-child(3) i{
+	width: 20px;
+	height: 24px; 
+	background-position: -52px 0;
+}
+
+.expand li:nth-child(4) i{
+	width: 20px;
+	height: 24px; 
+	background-position: -78px 0;
+}
+
+.expand li:nth-child(5) i{
+	width: 20px;
+	height: 24px; 
+	background-position: 0 -32px;
+}
+
+.expand li:nth-child(6) i{
+	width: 20px;
+	height: 24px; 
+	background-position: -26px -32px;
+}
+
+.expand li:nth-child(7) i{
+	width: 20px;
+	height: 24px; 
+	background-position: -52px -32px;
+}
+
+.expand li:nth-child(8) i{
+	width: 20px;
+	height: 24px; 
+	background-position: -78px -32px;
+}
+
+.expand li:nth-child(9) i{
+	width: 20px;
+	height: 24px; 
+	background-position: 0 -64px;
+}
+
+.expand li:nth-child(10) i{
+	width: 20px;
+	height: 24px; 
+	background-position: -26px -64px;
+}
+.expand li:nth-child(11) i{
+	width: 20px;
+	height: 24px; 
+	background-position: -52px -64px;
+}
+
+.expand li:nth-child(12) i{
+	width: 20px;
+	height: 24px; 
+	background-position: -78px -64px;
+}
+.expand li span{
+	color: #d5b38d;
+}
+
+
+
+
+
+
